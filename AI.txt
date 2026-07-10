@@ -1,0 +1,5 @@
+Used AI (Claude) to generate the initial code, including
+boilerplate for deployment and the initial navbar structure.
+From the Navbar names the LLM inferred the purpose of each
+section and filled in each page with dummy content. In the case
+of the compendium this also included the searchbar. 
