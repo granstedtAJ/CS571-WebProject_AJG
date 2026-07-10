@@ -1,0 +1,9 @@
+/* App-wide overrides layered on top of Bootstrap (imported first in main.jsx). */
+body {
+  min-height: 100vh;
+}
+
+/* Keep content clear of the sticky navbar on anchor jumps. */
+:root {
+  scroll-padding-top: 4rem;
+}

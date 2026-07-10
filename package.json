@@ -1,0 +1,23 @@
+{
+  "name": "cs571-webproject-ajg",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://granstedtAJ.github.io/CS571-WebProject_AJG/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.3"
+  }
+}
