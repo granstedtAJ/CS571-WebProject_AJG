@@ -9,7 +9,7 @@ export default function NavigationBar() {
     <Navbar bg="dark" variant="dark" expand="md" sticky="top">
       <Container>
         <Navbar.Brand as={NavLink} to="/">
-          CS571 Compendium
+          Shadowrun
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="main-nav" />
         <Navbar.Collapse id="main-nav">

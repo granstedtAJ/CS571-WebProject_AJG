@@ -1,33 +1,72 @@
-import { Accordion, Container } from 'react-bootstrap'
+import { Row, Col, Card, Container } from "react-bootstrap"
+import city1 from '../assets/LoreImages/city1.png'
+import city2 from '../assets/LoreImages/city2.png'
+import dragon1 from '../assets/LoreImages/dragon1.png'
+import dragon2 from '../assets/LoreImages/dragon2.png'
 
-const CHAPTERS = [
-  {
-    title: 'The Founding',
-    body: 'Long before the compendium was written, the first scholars gathered scattered knowledge into a single archive.',
-  },
-  {
-    title: 'The Great Expansion',
-    body: 'As explorers charted new regions, the archive grew to hold creatures and artifacts from every corner of the world.',
-  },
-  {
-    title: 'The Present Age',
-    body: 'Today the compendium lives on as a shared, ever-growing record maintained by its community of readers.',
-  },
-]
+
 
 export default function Lore() {
   return (
     <Container className="py-5">
-      <h1 className="mb-3">Lore</h1>
-      <p className="text-muted mb-4">Expand a chapter to read more.</p>
-      <Accordion defaultActiveKey="0" alwaysOpen>
-        {CHAPTERS.map((c, i) => (
-          <Accordion.Item eventKey={String(i)} key={c.title}>
-            <Accordion.Header>{c.title}</Accordion.Header>
-            <Accordion.Body>{c.body}</Accordion.Body>
-          </Accordion.Item>
-        ))}
-      </Accordion>
+      <h1 style={{textAlign: 'center'}}>The Pillars of the Setting</h1>
+      <Row>
+        <Col>
+          <Card>
+            <Card.Img src={dragon1} style={{width: '100%', height: '400px', objectFit: 'cover'}}/>
+          </Card>
+        
+
+          <Card>
+            <Card.Img src={city1} style={{width: '100%', height: '400px', objectFit: 'cover'}}/>
+          </Card>
+        </Col>
+
+        <Col>
+        <br />
+        <Card>
+          <Card.Body>
+            <ul>
+              <li>
+                The Sixth World: History diverged from our reality in the late 20th century. 
+                According to Mayan prophecy, the world moves through cyclical ages of magical energy. 
+                The return of magic in 2011 marked the transition from our mundane Fifth World into the 
+                magical Sixth World. 
+              </li>
+              <br />
+              <li>
+              The Awakening: On December 24, 2011, a sudden spike in global mana sparked "The Awakening". 
+              Ley lines flared, ancient dragons woke from centuries of slumber, and magic became a usable, 
+              scientific resource. 
+              </li>
+              <br />
+              <li>
+                Metahumanity: Shortly after the Awakening, human genetics mutated globally. Some children 
+                were born as Elves and Dwarves. In 2021, an event called Goblinization caused 10% of the world’s 
+                adult population to painfully transform into Orks and Trolls overnight, sparking severe racial tension.
+              </li>
+              <br />
+              <li>
+                Megacorporations: Governments crumbled due to plagues and wars. In their place arose massive, multi-national 
+                megacorporations. Thanks to legal precedents like the Shiawase Decision, they possess extraterritoriality—meaning 
+                corporate land is corporate sovereign territory, completely exempt from local laws.
+              </li>
+            </ul>
+          </Card.Body>
+        </Card>
+        </Col>
+
+        <Col>
+          <Card>
+            <Card.Img src={dragon2} style={{width: '100%', height: '400px', objectFit: 'cover'}}/>
+          </Card>
+
+          <Card>
+            <Card.Img src={city2} style={{width: '100%', height: '400px', objectFit: 'cover'}}/>
+          </Card>
+        </Col>
+
+      </Row>
     </Container>
   )
 }

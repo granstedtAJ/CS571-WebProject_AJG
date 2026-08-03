@@ -3,3 +3,6 @@ boilerplate for deployment and the initial navbar structure.
 From the Navbar names the LLM inferred the purpose of each
 section and filled in each page with dummy content. In the case
 of the compendium this also included the searchbar. 
+
+For the Web Project Check In - continued to use AI as a tutor, but
+wrote the code for this portion myself/did not use ClaudeCode. 

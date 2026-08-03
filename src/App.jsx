@@ -12,7 +12,7 @@ import NotFound from './pages/NotFound.jsx'
 export default function App() {
   return (
     <>
-      <NavigationBar />
+      <NavigationBar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/compendium" element={<Compendium />} />

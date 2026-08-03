@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Badge, Container, Form, Table } from 'react-bootstrap'
+import { Row,Col, Badge, Container, Form, Table } from 'react-bootstrap'
 
 // Dummy data. In a real client-side app this might come from a static JSON file
 // bundled at build time or fetched from a public read-only API.
@@ -31,40 +31,46 @@ export default function Compendium() {
 
   return (
     <Container className="py-5">
-      <h1 className="mb-3">Compendium</h1>
-      <Form.Control
-        className="mb-3"
-        placeholder="Search by name…"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <Table striped bordered hover responsive>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Rarity</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filtered.map((e) => (
-            <tr key={e.name}>
-              <td>{e.name}</td>
-              <td>{e.type}</td>
-              <td>
-                <Badge bg={RARITY_VARIANT[e.rarity]}>{e.rarity}</Badge>
-              </td>
-            </tr>
-          ))}
-          {filtered.length === 0 && (
-            <tr>
-              <td colSpan={3} className="text-center text-muted">
-                No entries match “{query}”.
-              </td>
-            </tr>
-          )}
-        </tbody>
-      </Table>
+      <h1 className="mb-3" style={{textAlign: "center"}}>Compendium</h1>
+      <Row>
+        <Col>
+          <Form.Control
+            className="mb-3"
+            placeholder="Search by name…"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </Col>
+        <Col>
+          <Table striped bordered hover responsive>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Rarity</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((e) => (
+                <tr key={e.name}>
+                  <td>{e.name}</td>
+                  <td>{e.type}</td>
+                  <td>
+                    <Badge bg={RARITY_VARIANT[e.rarity]}>{e.rarity}</Badge>
+                  </td>
+                </tr>
+              ))}
+              {filtered.length === 0 && (
+                <tr>
+                  <td colSpan={3} className="text-center text-muted">
+                    No entries match “{query}”.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
     </Container>
   )
 }

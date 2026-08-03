@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <Container className="py-5 text-center">
       <h1 className="display-4">404</h1>
-      <p className="lead text-muted">That page isn’t in the compendium.</p>
+      <p className="lead text-muted">Page Not Found</p>
       <Button variant="primary" onClick={() => navigate('/')}>
         Back to Home
       </Button>
