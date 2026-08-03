@@ -5,4 +5,6 @@ section and filled in each page with dummy content. In the case
 of the compendium this also included the searchbar. 
 
 For the Web Project Check In - continued to use AI as a tutor, but
-wrote the code for this portion myself/did not use ClaudeCode. 
+wrote the code for this portion myself/did not use ClaudeCode.
+The total codebase is ~50% AI since the initial deployment 
+(if evaluating the content in the src folder)
