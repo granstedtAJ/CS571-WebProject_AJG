@@ -32,7 +32,9 @@ export default function Rules() {
                       meet or exceed a target threshold set by the GM.
                     </li>
                   </ul>
-                  <Card.Img  variant="top" src={diceRoll} style={{width: '100%', height: '500px', objectFit: 'cover'}}/>
+                  <Card.Img  variant="top" src={diceRoll} alte="A picture of shadowrun characters rolling dice"
+                    style={{width: '100%', height: '500px', objectFit: 'cover'}}
+                  />
                 </Card.Body>
             </Card>
             </Col>
@@ -70,7 +72,9 @@ export default function Rules() {
     
             <Col>
               <Card>
-                <Card.Img  variant="bottom" src={prisonBreak} style={{width: '100%', height: '500px', objectFit: 'cover'}}/>
+                <Card.Img  variant="bottom" src={prisonBreak} alt="a picture of a prison break"
+                  style={{width: '100%', height: '500px', objectFit: 'cover'}}
+                />
                 <Card.Title style={cardStyle}>Core Mechanics</Card.Title>
                 <Card.Body>
                     Complete the mission assigned by your GameMaster while keeping your character 

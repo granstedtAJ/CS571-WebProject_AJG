@@ -8,3 +8,7 @@ For the Web Project Check In - continued to use AI as a tutor, but
 wrote the code for this portion myself/did not use ClaudeCode.
 The total codebase is ~50% AI since the initial deployment 
 (if evaluating the content in the src folder)
+
+For the final web project assignment - continued to use AI as a tutor,
+but used AI to generate the items needed for Items.js (aside from the images
+which I needed to manually search for). Split remains ~50% AI. 
