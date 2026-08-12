@@ -75,7 +75,7 @@ export default function Rules() {
                 <Card.Img  variant="bottom" src={prisonBreak} alt="a picture of a prison break"
                   style={{width: '100%', height: '500px', objectFit: 'cover'}}
                 />
-                <Card.Title style={cardStyle}>Core Mechanics</Card.Title>
+                <Card.Title style={cardStyle}>Win Condition</Card.Title>
                 <Card.Body>
                     Complete the mission assigned by your GameMaster while keeping your character 
                     alive through sequential turns of combat. 
