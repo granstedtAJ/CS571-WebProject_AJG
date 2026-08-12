@@ -21,6 +21,7 @@ export default function Compendium() {
       <h1 className="mb-3" style={{textAlign: "center"}}>Compendium</h1>
       <Form.Control
             className="mb-3"
+            aria-label='Item Search'
             placeholder="Search by name…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}

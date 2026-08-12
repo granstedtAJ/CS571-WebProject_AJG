@@ -5,10 +5,11 @@ import { useState } from 'react'
 export default function ItemCard({name, description, stats, image}) {
   const [showMoreToggled,setShowMoreToggled] = useState(false);
   const [isHovered,setIsHovered]=useState(false);
-  console.log(stats);
   const cardStyle = {
     cursor: 'pointer',
-    border: isHovered ? '5px solid #743089' : '5px solid rgba(0,0,0,.125)'
+    border: isHovered ? '5px solid #743089' : '5px solid rgba(0,0,0,.125)',
+    alignItems: 'stretch',
+    width: '100%'
   };
 
   const imageStyle ={
@@ -23,16 +24,20 @@ export default function ItemCard({name, description, stats, image}) {
   
   return (
     <>
-    <Card 
+    <Card
+        as="button"
+        type="button"
         style={cardStyle}
         onClick={() => setShowMoreToggled(!showMoreToggled)}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        aria-controls={name}
     >
       <Card.Title>{name}</Card.Title>
       <img 
       className = "d-block w-100"
       src = {image}
+      alt = {`A picture of ${name}`}
       style = {imageStyle}
       />
       {showMoreToggled && 

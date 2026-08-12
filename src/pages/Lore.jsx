@@ -13,12 +13,16 @@ export default function Lore() {
       <Row>
         <Col>
           <Card>
-            <Card.Img src={dragon1} style={{width: '100%', height: '400px', objectFit: 'cover'}}/>
+            <Card.Img src={dragon1} alt="A picture of a dragon" 
+              style={{width: '100%', height: '400px', objectFit: 'cover'}}
+            />
           </Card>
         
 
           <Card>
-            <Card.Img src={city1} style={{width: '100%', height: '400px', objectFit: 'cover'}}/>
+            <Card.Img src={city1} alt="A picture of a cyberpunk style city" 
+              style={{width: '100%', height: '400px', objectFit: 'cover'}}
+            />
           </Card>
         </Col>
 
@@ -58,11 +62,15 @@ export default function Lore() {
 
         <Col>
           <Card>
-            <Card.Img src={dragon2} style={{width: '100%', height: '400px', objectFit: 'cover'}}/>
+            <Card.Img src={dragon2} alt="A picture of a dragon" 
+              style={{width: '100%', height: '400px', objectFit: 'cover'}}
+            />
           </Card>
 
           <Card>
-            <Card.Img src={city2} style={{width: '100%', height: '400px', objectFit: 'cover'}}/>
+            <Card.Img src={city2} alt="A picture of a cyberpunk style city" 
+              style={{width: '100%', height: '400px', objectFit: 'cover'}}
+            />
           </Card>
         </Col>
 
